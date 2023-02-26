@@ -1,4 +1,3 @@
-import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import React from "react";
@@ -17,5 +16,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-
-reportWebVitals();

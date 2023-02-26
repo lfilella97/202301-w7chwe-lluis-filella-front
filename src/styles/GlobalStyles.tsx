@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   background-color: #f2efaa;
   font-family: "Basier circle", Geneva, Tahoma, sans-serif, sans-serif; ;
@@ -28,15 +28,16 @@ ul {
 button, input  {
   font-family: inherit;
 }
- button{
+
+button {
   padding: 0;
   border: none;
   outline: none;
   color: inherit;
   background: none
- }
+}
 
-div.container{
+div.container {
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
