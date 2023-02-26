@@ -33,7 +33,15 @@ const LogInStyles = styled.div`
       justify-content: space-around;
       height: 80px;
     }
+<<<<<<< Updated upstream
 
+=======
+    &_input {
+      padding: 5px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+    }
+>>>>>>> Stashed changes
     &_button {
       background-color: #f2efaa;
       border-radius: 1.5rem;
@@ -46,7 +54,12 @@ const LogInStyles = styled.div`
       text-align: center;
       box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
 
+<<<<<<< Updated upstream
       &:hover {
+=======
+      &:hover,
+      &:focus {
+>>>>>>> Stashed changes
         background-color: #1e293b;
         color: #fff;
         cursor: pointer;
@@ -55,10 +68,23 @@ const LogInStyles = styled.div`
 
     &_register {
       text-align: center;
+<<<<<<< Updated upstream
       padding: 20px;
 
       &:hover {
         text-shadow: 1px 1px 2px black, 0 0 1rem white, 0 0 0.2em gray;
+=======
+      display: inline-block;
+      padding: 20px;
+      border-radius: 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1;
+      padding: 1rem 1.6rem;
+
+      &:hover {
+        box-shadow: 0px 0px 3px rgba(1, 1, 1, 1);
+>>>>>>> Stashed changes
         cursor: pointer;
       }
     }

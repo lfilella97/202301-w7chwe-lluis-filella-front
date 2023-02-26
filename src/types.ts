@@ -1,10 +1,5 @@
-export interface UserState {
+export interface UserState extends User {
   isLogged: boolean;
-  userName: string;
-  token: string;
-  avatar: string;
-  friends: Users;
-  enemies: Users;
 }
 
 export interface User {
@@ -16,3 +11,8 @@ export interface User {
 }
 
 export type Users = User[];
+
+export interface UserCredentials {
+  userName: string;
+  password: string;
+}
