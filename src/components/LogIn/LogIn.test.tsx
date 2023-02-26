@@ -1,16 +1,20 @@
 import { render, screen } from "@testing-library/react";
+import { Provider } from "react-redux";
+import { store } from "../../store";
 import GlobalStyles from "../../styles/GlobalStyles";
 import LogIn from "./LogIn";
 
 describe("Given a Login component", () => {
   describe("When it is rendered", () => {
-    test("Then it should show a heading with the title `LogIn to your account`", () => {
-      const heading = "LogIn to your account";
+    test("Then it should show a heading with the title `Login to your account`", () => {
+      const heading = "Login to your account";
 
       render(
         <>
-          <GlobalStyles />
-          <LogIn />
+          <Provider store={store}>
+            <GlobalStyles />
+            <LogIn />
+          </Provider>
         </>
       );
 
@@ -19,13 +23,15 @@ describe("Given a Login component", () => {
       expect(expectedText).toHaveTextContent(heading);
     });
 
-    test("Then it should show a button with the text 'LogIn'", () => {
-      const button = "LogIn";
+    test("Then it should show a button with the text 'Login'", () => {
+      const button = "Login";
 
       render(
         <>
-          <GlobalStyles />
-          <LogIn />
+          <Provider store={store}>
+            <GlobalStyles />
+            <LogIn />
+          </Provider>
         </>
       );
 
@@ -39,8 +45,10 @@ describe("Given a Login component", () => {
 
       render(
         <>
-          <GlobalStyles />
-          <LogIn />
+          <Provider store={store}>
+            <GlobalStyles />
+            <LogIn />
+          </Provider>
         </>
       );
 
