@@ -3,6 +3,8 @@ import useApi from "./../../hooks/useApi/useApi";
 import { UserCredentials } from "../../types";
 import LogInStyles from "./LogInStyles";
 
+export let sendForm: (event: React.FormEvent<HTMLInputElement>) => void;
+
 const LogIn = (): JSX.Element => {
   const { loginUser } = useApi();
 
@@ -27,7 +29,7 @@ const LogIn = (): JSX.Element => {
     setUserCredentials({ password, userName });
   };
 
-  const sendForm = (event: React.FormEvent<HTMLInputElement>) => {
+  sendForm = (event: React.FormEvent<HTMLInputElement>) => {
     event.preventDefault();
     loginUser(userCredentials);
   };
