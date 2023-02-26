@@ -20,9 +20,6 @@ const userSlice = createSlice({
     ): UserState => ({
       ...currentUserState,
       userName: action.payload.userName,
-      avatar: action.payload.avatar,
-      enemies: action.payload.enemies,
-      friends: action.payload.friends,
       token: action.payload.token,
       isLogged: true,
     }),
